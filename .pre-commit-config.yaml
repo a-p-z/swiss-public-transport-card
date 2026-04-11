@@ -1,0 +1,13 @@
+repos:
+  - repo: local
+    hooks:
+      - id: format
+        name: prettier
+        language: system
+        entry: npm run format
+        pass_filenames: false
+      - id: lint
+        name: eslint
+        language: system
+        entry: npm run lint
+        pass_filenames: false
