@@ -1,0 +1,10 @@
+services:
+  homeassistant:
+    platform: linux/amd64
+    container_name: homeassistant
+    image: ghcr.io/home-assistant/home-assistant:stable
+    ports:
+      - 8123:8123
+    volumes:
+      - ./:/config/www/swiss-public-transport-card/:ro
+      - ./configuration.yaml:/config/configuration.yaml:ro
