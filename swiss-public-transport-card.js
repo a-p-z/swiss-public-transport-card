@@ -206,6 +206,7 @@ class SwissPublicTransportCard extends LitElement {
 
       .line {
         background: #fffffe;
+        color: black;
         display: inline-block;
         font-size: 0.85rem;
         font-weight: bold;
@@ -215,10 +216,6 @@ class SwissPublicTransportCard extends LitElement {
         text-align: center;
         vertical-align: middle;
         white-space: nowrap;
-      }
-
-      .B {
-        color: black;
       }
 
       .R {
